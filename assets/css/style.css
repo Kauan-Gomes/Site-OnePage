@@ -1,0 +1,556 @@
+/*
+    Configurações gerais
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+:root {
+    --bgcolor: #000;
+    --decopri: #b28756;
+    --fgColor: #fff;
+    --menusele: #D3D3D3;
+    --descColorLight: #a7a7a7;
+    --descColorDark: #979797;
+    --bgDefLight: #f7f7f7;
+    --titColorLight: #000;
+    --bgDefDark: #000;
+    --titColorDark: #fff;
+    --textService: #999;
+    --bgFiltroProj: #ebebeb;
+    --fgFiltroProj: #5f5f5f;
+    --linFiltroProj: #d3d3d3;
+    --destaMenu: #ccc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--decopri);
+    color: var(--fgColor);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/*
+    Template das sections
+*/
+.default {
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 22px;
+}
+
+.default .section-desc {
+    font-size: 14px;
+    color: var(--descColorLight);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+    min-height: 100px;
+}
+
+.default.light {
+    background-color: var(--bgDefLight);
+}
+
+.default.light .section-title {
+    color: var(--titColorLight);
+}
+
+.default.dark {
+    background-color: var(--bgDefDark);
+}
+
+.default.dark .section-desc {
+    color: var(--descColorDark);
+}
+
+.default.dark .section-title {
+    color: var(--titColorDark);
+}
+
+/*
+    Cabeçalho
+*/
+header {
+    height: 100px;
+    background-color: var(--bgcolor);
+    color: var(--fgColor);
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-image: url("../image/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+    Menu
+*/
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: var(--fgColor);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid var(--bgcolor);
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid var(--decopri);
+    color: var(--menusele);
+}
+
+.menu .active a {
+    border-bottom: 5px solid var(--decopri);
+}
+
+/*
+    Banner - Sliders
+*/
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #131313;
+    background-image: url("../image/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slider {
+    width: calc(100vw + 4px);
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.8);
+    margin-left: -4px;
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--fgColor);
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner span {
+    color: var(--decopri);
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: var(--decopri);
+}
+
+/*
+    Section - About Us
+*/
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 15px 15px 15px #aaa9a9;
+}
+
+/*
+    Section - Services
+*/
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid var(--textService);
+}
+
+.section-service:first-child {
+    border-left: 1px solid var(--textService);
+}
+
+.section-service h4 {
+    color: var(--textService);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 45px;
+}
+
+.section-service p {
+    color: var(--textService);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*
+    Section - Projects
+*/
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters {
+    border: 1px solid var(--linFiltroProj);
+    background-color: var(--bgFiltroProj);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    color: var(--fgFiltroProj);
+    padding: 20px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid var(--linFiltroProj);
+    border-bottom: 3px solid var(--bgFiltroProj);
+    cursor: pointer;
+}
+
+.section-projects--filters li:first-child {
+    border-left: 0;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+    border-bottom: 3px solid var(--decopri);
+}
+
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--destaMenu);
+    flex-direction: column;
+}
+
+.section-projects--photoinfo h5 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section-projects--photoinfo p {
+    font-size: 13px;
+    padding: 10px 40px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
+    cursor: pointer;
+}
+
+.section-ourteam{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    
+}
+
+.section-ourteamperson{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    height: 480px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-right: 1px solid var(--bgcolor);
+    width: 350px;
+}
+
+
+
+.section-ourteamperson h4 {
+    color: #000;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 0px 55px;
+}
+
+.section-ourteamperson h5 {
+    color: var(--descColorLight);
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.section-ourteamperson--person{
+    margin-top: 60px;
+    height: 200px;
+    width: 200px;
+}
+
+.section-ourteamperson--redes{
+    display: flex;
+    height: 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    padding: 2px 2px 2px 2px;
+    
+}
+
+
+.section-ourteamperson--rede {
+    background-color: var(--descColorDark);
+    padding: 8px 8px 11px 6px;
+    margin-left: 8px;
+    border-radius: 16px;
+    height: 33px;
+    width: 33px;
+    margin-top: 25px;
+    color: #ebebeb;
+}
+
+.section-ourteamperson--rede:hover,
+.section-ourteamperson--rede.active{
+    cursor: pointer;
+    background-color: #b28756;
+
+}
+
+.section-ourteamperson--rede .dot {
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+
+.default.dark.our-team{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../media/foto6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #131313;
+}
+
+.our-team .sliders-pointers {
+    display: flex;
+    justify-content:center;
+    height: 20px;
+    margin-top: 25px; 
+    margin-bottom: -19px;
+}
+
+.our-team .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.our-team .pointer.active {
+    background-color: var(--decopri);
+}
+
+.ClientesFelizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ClientesFelizesimg {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.ClientesFelizes h1 {
+    margin-top: 30px;
+    color: #000;
+    font-weight:800;
+}
+.ClientesFelizes h2 {
+    font-size: 20px;
+    color:#131313;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.ClientesFelizes p{
+    margin-top: 40px;
+    width: 800px;
+    text-align: center;
+}
+
+.ClientesFelizes .sliders-pointers {
+    width: 60vw;
+    height: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ClientesFelizes .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.ClientesFelizes .pointer.active {
+    background-color: var(--decopri);
+}
+
