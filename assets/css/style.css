@@ -554,3 +554,60 @@ header {
     background-color: var(--decopri);
 }
 
+
+.default.silver {
+    background-color: var(--bgFiltroProj);
+}
+
+.marcas {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+    
+}
+
+.section-prices {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 32px;
+}
+
+.section-prices-planos{
+    height: 370px;
+    width: 269px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.section-prices-planos .planos{
+    font-size: 16px;
+}
+
+.planos h3{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.preco {
+    font-size: 30px;  
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.section-prices-planos .section-desc{
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.conteudo {
+    font-size: 14px;
+    font-weight: 450;
+    margin-top: 1px;
+}
