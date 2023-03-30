@@ -607,7 +607,24 @@ header {
 }
 
 .conteudo {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 450;
-    margin-top: 1px;
+    
+}
+
+.section-prices-botao {
+    background-color: #131313;
+    color: var(--bgDefLight);
+    height: 41px;
+    width: 131px;
+    justify-content: center;
+    margin: 20px 2px 1px 64px;
+    padding: 8px 0px;
+    border-radius: 20px;
+    
+}
+
+.section-prices-botao:hover{
+    cursor: pointer;
+    background-color: #b28756;
 }
