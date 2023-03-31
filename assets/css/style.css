@@ -628,3 +628,129 @@ header {
     cursor: pointer;
     background-color: #b28756;
 }
+
+.premium{
+    height: 380px;
+    border-bottom: 1px solid var(--descColorDark);
+}
+.section-premium{
+    display: flex;
+}
+
+
+.section-premium-features{
+    width:700px;
+    padding: 23px 48px;
+
+}
+.premium_ordem{
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+    
+}
+
+.checks {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align:left ;
+    font-weight: 600;  
+    font-size: 14px;
+    color: var(--descColorLight);
+    margin-top: 10px;
+}
+
+.premium_ordem .section-title{
+    text-align: left;
+}
+
+.premium .sliders-pointers {
+    display: flex;
+    justify-content:center;
+    height: 20px;
+    margin-top: 60px; 
+    margin-bottom: -19px;
+}
+
+.premium .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.premium .pointer.active {
+    background-color: var(--decopri);
+}
+
+.premium__botao{
+    background-color: var(--decopri);
+    color: var(--bgDefLight);
+    height: 41px;
+    width: 180px;
+    justify-content: center;
+    margin: 66px 17px 7px 480px;
+    padding: 13px 45px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: inherit;
+}
+.body_premium{
+    height: 492px;
+}
+
+.some_facts {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+
+}
+
+.some_facts_container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 30px;
+   
+}
+
+.some_facts_container_titulo {
+    color: var(--decopri);
+    font-family: inherit;
+    font-size: 50px;
+    font-weight: 700;
+    height: 55px;
+    
+}
+
+.some_facts_container_divisão{
+    color: var(--descColorLight);
+    font-size: 50px;
+    font-weight: 700px;
+    text-align: center;
+    margin-top: -25px;
+}
+.some_facts_titulo {
+    font-size: 46px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--bgDefLight);
+}
+
+.some_facts_container_descricao{
+    color: var(--bgDefLight);
+    font-size:24px;
+    font-weight:700;
+    font-family: inherit;
+}
+
+.some_facts_container_subdescricao{
+    color: var(--descColorDark);
+    font-size: 15px;
+    font-family: inherit;
+    margin:15px 45px;
+}
